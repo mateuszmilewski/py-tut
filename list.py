@@ -33,6 +33,13 @@ def list():
     print(list4)
 
 
+    # quick loop
+    print('quick loop')
+    words = ['cat', 'window', 'defenestrate']
+    for word in words:
+        print(word, len(word))
+
+
 
 # side quest
 def simpleFib():
