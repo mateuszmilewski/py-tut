@@ -41,6 +41,31 @@ def list():
 
 
 
+    # colletion
+    coll = {
+        'key1': 1,
+        'key2': 2,
+        'key3': 3,
+        'key4': 4
+    }
+
+    for k, v in coll.items():
+        print(k, v)
+        print(coll[k])
+
+
+    #list, range # this is somehow doesnt work properly
+    #print('list and range')
+    #rng1 = range(5)
+    #print(rng1)
+    #list5 = list(rng1)
+    #print('end of the list and range')
+
+    print('print(sum(range(4)))')
+    print(sum(range(4))) # 0 + 1 + 2 + 3
+
+
+
 # side quest
 def simpleFib():
 
