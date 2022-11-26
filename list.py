@@ -52,7 +52,7 @@ def list():
     for k, v in coll.items():
         print(k, v)
         print(coll[k])
-
+    
 
     #list, range # this is somehow doesnt work properly
     #print('list and range')
