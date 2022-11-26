@@ -77,7 +77,26 @@ def simpleFib():
         a, b = b, (a + b)
 
 
+def interestingExample(num, l = []):
+    print('interesting exmaple')
+    #
+    l.append(num)
+    print(l)
+    return l
+
+
+
+
+
 list()
 
 #side quest call
 simpleFib()
+
+l = [17]
+# 17 will be lost - always overwriting
+l = interestingExample(1)
+l = interestingExample(2)
+l = interestingExample(1)
+
+print('list list ', l)
