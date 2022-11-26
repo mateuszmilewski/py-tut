@@ -151,4 +151,14 @@ def sq():
     print('list list ')
     print( listlist )
 
+
+    nextTestList = [-4, -2, 0, 2, 5, 7]
+    output1 = [x * 2 for x in nextTestList]
+    print('output1 from [x * 2 for x in nextTestList]')
+    print(output1)
+
+    output2 = [abs(x) for x in output1]
+    print('output2 = abs(x) for x in output1')
+    print(output2)
+
 sq()
