@@ -100,3 +100,39 @@ l = interestingExample(2)
 l = interestingExample(1)
 
 print('list list ', l)
+
+
+def moreOnLists():
+    l = [2,5,7]
+    l.append(1)
+    l.insert(1,23)
+    l.remove(5)
+    l.extend([3,3])
+
+    print('more on lists ', l)
+
+moreOnLists()
+
+
+
+def sq():
+
+    print('list 1 -> ')
+    a = []
+    for x in range(20):
+        a.append(x**2)
+    print(a)
+
+    print('list 2 ->')
+    a = []
+    #a = list((1)) this is not wokring list ...
+    #a = list(map(lambda x: x**2, range(10)))
+    result1 = map( lambda x: x**2 , range(10))
+    print(result1, result1.__doc__)
+    print(dir(result1))
+    print( 'result1.__eq__.__doc__ ->' )
+    print( result1.__eq__.__doc__ )
+    print( 'result1.__iter__.__doc__ ->' )
+    print( result1.__iter__.__doc__ )
+
+sq()
