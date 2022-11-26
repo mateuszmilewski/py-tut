@@ -135,6 +135,12 @@ def sq():
     print( 'result1.__iter__.__doc__ ->' )
     print( result1.__iter__.__doc__ )
 
+    print("test enumerate on map object")
+    for x in enumerate(result1):
+        print(x)
+    for i,k in enumerate(result1):
+        print(i,k)
+
 
     # nice one here
     listlist = [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
