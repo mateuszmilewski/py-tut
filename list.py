@@ -135,4 +135,20 @@ def sq():
     print( 'result1.__iter__.__doc__ ->' )
     print( result1.__iter__.__doc__ )
 
+
+    # nice one here
+    listlist = [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
+    # this below is the same but i really like this one above
+    #combs = []
+    #for x in [1,2,3]:
+    #   for y in [3,1,4]:
+    #       if x != y:
+    #        combs.append((x, y))
+    #
+    #combs
+    #[(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
+
+    print('list list ')
+    print( listlist )
+
 sq()
